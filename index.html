@@ -5,129 +5,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Somos Leça</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #004d00;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    h2 {
-      color: #004d00;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li {
-      margin-bottom: 0.5rem;
-    }
-    footer {
-      background-color: #004d00;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-    .cta {
-      background-color: #008000;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
-    .cta a {
-      color: white;
-      text-decoration: underline;
-    }
-    .programa {
-      background-color: #ffffff;
-      padding: 2rem;
-      border-radius: 8px;
-      margin-bottom: 2rem;
-    }
+    body { font-family: 'Poppins', sans-serif; background: white; color: #1f2937; margin: 0; padding: 0; }
+    h1, h2, h3 { color: #065f46; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+    .section { background: #f9fafb; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin: 2rem 0; padding: 2rem; }
+    .header { background: #065f46; color: white; padding: 4rem 2rem; text-align: center; position: relative; }
+    .header h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+    .header p { font-size: 1.25rem; }
+    .highlight { background: #d1fae5; padding: 1rem; margin-bottom: 0.5rem; border-left: 4px solid #047857; font-weight: bold; }
+    .list-item { background: white; border-left: 4px solid #047857; padding: 0.75rem 1rem; margin-bottom: 0.5rem; border-radius: 0.5rem; }
+    .button { display: inline-block; background: #047857; color: white; padding: 0.75rem 1.5rem; border-radius: 9999px; text-decoration: none; }
+    footer { background: #f3f4f6; padding: 1rem; text-align: center; font-size: 0.875rem; color: #6b7280; }
   </style>
 </head>
 <body>
-  <header>
+  <div class="header">
     <h1>Somos Leça</h1>
-    <p>Um Leça Mais Forte. Um Leça Mais Nosso.</p>
-  </header>
+    <p>Candidatura aos Órgãos Sociais do Leça Futebol Clube</p>
+    <p><em>“Um Leça Mais Forte. Um Leça Mais Nosso.”</em></p>
+  </div>
 
-  <section>
-    <h2>A Nossa Candidatura</h2>
-    <p>Continuamos um projeto iniciado em 2022, com provas dadas, rumo a um Leça Futebol Clube mais forte, mais próximo, mais preparado para os desafios do futuro.</p>
-  </section>
+  <div class="container">
+    <div class="section">
+      <h2>A Nossa Candidatura</h2>
+      <p>Continuamos um projeto iniciado em 2022, com provas dadas, rumo a um Leça Futebol Clube mais forte, mais próximo, mais preparado para os desafios do futuro.</p>
+    </div>
 
-  <section>
-    <h2>Lista Candidata</h2>
-    <h3>Direção</h3>
-    <ul>
-      <li>João Laranjeira – Presidente</li>
-      <li>Tiago Moura – Vice-Presidente Formação</li>
-      <li>Eurico Guerreiro – Vice-Presidente Modalidades</li>
-      <li>Hélder Valente – Vice-Presidente Sócios e Área Social</li>
-      <li>Tiago Silva – Vice-Presidente Financeiro</li>
-      <li>Luis Neto – Vice-Presidente Património</li>
-      <li>José Sousa – Vice-Presidente Marketing</li>
-      <li>Nuno Margarido – Vice-Presidente Jurídico</li>
-    </ul>
+    <div class="section">
+      <h2>Lista Candidata</h2>
+      <div class="highlight"><strong>João Laranjeira</strong> Presidente</div>
+      <div class="list-item"><strong>Tiago Moura</strong> Vice-Presidente Formação</div>
+      <div class="list-item"><strong>Eurico Guerreiro</strong> Vice-Presidente Modalidades</div>
+      <div class="list-item"><strong>Hélder Valente</strong> Vice-Presidente Sócios e Área Social</div>
+      <div class="list-item"><strong>Tiago Silva</strong> Vice-Presidente Financeiro</div>
+      <div class="list-item"><strong>Luis Neto</strong> Vice-Presidente Património</div>
+      <div class="list-item"><strong>José Sousa</strong> Vice-Presidente Marketing</div>
+      <div class="list-item"><strong>Nuno Margarido</strong> Vice-Presidente Jurídico</div>
+      <div class="list-item"><strong>Hugo Salvador</strong> Presidente Conselho Fiscal</div>
+      <div class="list-item"><strong>Sofia Braz</strong> Vice-Presidente Conselho Fiscal</div>
+      <div class="list-item"><strong>Rui Pedro Carvalho</strong> Secretário Conselho Fiscal</div>
+      <div class="list-item"><strong>Rui Carvalho</strong> Presidente MAG</div>
+      <div class="list-item"><strong>Ana Faria</strong> Vice-Presidente MAG</div>
+      <div class="list-item"><strong>Pedro Silva</strong> Secretário MAG</div>
+      <p><a class="button" href="#">Ver Lista Completa</a></p>
+    </div>
 
-    <h3>Conselho Fiscal</h3>
-    <ul>
-      <li>Hugo Salvador – Presidente</li>
-      <li>Sofia Braz – Vice-Presidente</li>
-      <li>Rui Pedro Carvalho – Secretário</li>
-    </ul>
-
-    <h3>Mesa da Assembleia Geral</h3>
-    <ul>
-      <li>Rui Carvalho – Presidente</li>
-      <li>Ana Faria – Vice-Presidente</li>
-      <li>Pedro Silva – Secretário</li>
-    </ul>
-  </section>
-
-  <section class="programa">
-    <h2>O Nosso Programa 2025–2027</h2>
-    <p>Conhece os pilares da nossa candidatura, assentes na continuidade, inovação e compromisso com o Leça e a sua comunidade:</p>
-    <ul>
-      <li><strong>Sócios:</strong> Valorização, participação e proximidade com todos os associados.</li>
-      <li><strong>Ação Social:</strong> Um clube solidário e atento à sua comunidade.</li>
-      <li><strong>Futebol de Formação:</strong> Consolidação de processos e ambição desportiva.</li>
-      <li><strong>Modalidades:</strong> Requalificação do pavilhão e apoio estruturado às modalidades.</li>
-      <li><strong>Infraestruturas:</strong> Execução da segunda e terceira fases da obra do pavilhão.</li>
-      <li><strong>Marketing e Comunicação:</strong> Nova estrutura para reforçar a marca e os laços com os parceiros.</li>
-      <li><strong>Executivo:</strong> Direção com objetivos claros, descentralizada e escrutinada.</li>
-      <li><strong>Jurídico:</strong> Reforço da regulamentação interna e candidatura a apoios externos.</li>
-      <li><strong>Relações Externas:</strong> Fortalecer a ligação às forças políticas e à comunidade.</li>
-      <li><strong>Finanças:</strong> Rigor orçamental, consolidação e aplicação à formação.</li>
-    </ul>
-    <p><a href="#">Descarrega o programa completo em PDF</a></p>
-  </section>
-
-  <div class="cta">
-    Participa no futuro do nosso clube. <a href="mailto:contacto@somosleca.pt">Entra em contacto connosco</a>
+    <div class="section">
+      <h2>Programa 2025–2027</h2>
+      <ul>
+        <li><strong>Sócios:</strong> Valorização, participação e proximidade com todos os associados.</li>
+        <li><strong>Ação Social:</strong> Um clube solidário e atento à sua comunidade.</li>
+        <li><strong>Futebol de Formação:</strong> Consolidação de processos e ambição desportiva.</li>
+        <li><strong>Modalidades:</strong> Requalificação do pavilhão e apoio estruturado às modalidades.</li>
+        <li><strong>Infraestruturas:</strong> Execução da segunda e terceira fases da obra do pavilhão.</li>
+        <li><strong>Marketing e Comunicação:</strong> Nova estrutura para reforçar a marca e os laços com os parceiros.</li>
+        <li><strong>Executivo:</strong> Direção com objetivos claros, descentralizada e escrutinada.</li>
+        <li><strong>Jurídico:</strong> Reforço da regulamentação interna e candidatura a apoios externos.</li>
+        <li><strong>Relações Externas:</strong> Fortalecer a ligação às forças políticas e à comunidade.</li>
+        <li><strong>Finanças:</strong> Rigor orçamental, consolidação e aplicação à formação.</li>
+      </ul>
+      <p><a class="button" href="#">Ver Programa Completo</a></p>
+    </div>
   </div>
 
   <footer>
