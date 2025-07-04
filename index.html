@@ -1,76 +1,99 @@
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Somos Leça</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Poppins', sans-serif; background: white; color: #1f2937; margin: 0; padding: 0; }
-    h1, h2, h3 { color: #065f46; }
-    .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
-    .section { background: #f9fafb; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin: 2rem 0; padding: 2rem; }
-    .header { background: #065f46; color: white; padding: 4rem 2rem; text-align: center; position: relative; }
-    .header h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-    .header p { font-size: 1.25rem; }
-    .highlight { background: #d1fae5; padding: 1rem; margin-bottom: 0.5rem; border-left: 4px solid #047857; font-weight: bold; }
-    .list-item { background: white; border-left: 4px solid #047857; padding: 0.75rem 1rem; margin-bottom: 0.5rem; border-radius: 0.5rem; }
-    .button { display: inline-block; background: #047857; color: white; padding: 0.75rem 1.5rem; border-radius: 9999px; text-decoration: none; }
-    footer { background: #f3f4f6; padding: 1rem; text-align: center; font-size: 0.875rem; color: #6b7280; }
-  </style>
+  <style>body { font-family: 'Poppins', sans-serif; }</style>
 </head>
-<body>
-  <div class="header">
-    <h1>Somos Leça</h1>
-    <p>Candidatura aos Órgãos Sociais do Leça Futebol Clube</p>
-    <p><em>“Um Leça Mais Forte. Um Leça Mais Nosso.”</em></p>
-  </div>
-
-  <div class="container">
-    <div class="section">
-      <h2>A Nossa Candidatura</h2>
-      <p>Continuamos um projeto iniciado em 2022, com provas dadas, rumo a um Leça Futebol Clube mais forte, mais próximo, mais preparado para os desafios do futuro.</p>
+<body class="bg-white text-gray-800">
+  <header class="relative bg-green-900 text-white py-24 text-center overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1593113598332-cd2b0d3d6330?auto=format&fit=crop&w=1470&q=80');"></div>
+    <div class="relative z-10">
+      <h1 class="text-5xl font-bold drop-shadow-lg">Somos Leça</h1>
+      <p class="text-2xl mt-4">Candidatura aos Órgãos Sociais do Leça Futebol Clube</p>
+      <p class="text-lg mt-2 italic text-green-200">“Um Leça Mais Forte. Um Leça Mais Nosso.”</p>
     </div>
+  </header>
 
-    <div class="section">
-      <h2>Lista Candidata</h2>
-      <div class="highlight"><strong>João Laranjeira</strong> Presidente</div>
-      <div class="list-item"><strong>Tiago Moura</strong> Vice-Presidente Formação</div>
-      <div class="list-item"><strong>Eurico Guerreiro</strong> Vice-Presidente Modalidades</div>
-      <div class="list-item"><strong>Hélder Valente</strong> Vice-Presidente Sócios e Área Social</div>
-      <div class="list-item"><strong>Tiago Silva</strong> Vice-Presidente Financeiro</div>
-      <div class="list-item"><strong>Luis Neto</strong> Vice-Presidente Património</div>
-      <div class="list-item"><strong>José Sousa</strong> Vice-Presidente Marketing</div>
-      <div class="list-item"><strong>Nuno Margarido</strong> Vice-Presidente Jurídico</div>
-      <div class="list-item"><strong>Hugo Salvador</strong> Presidente Conselho Fiscal</div>
-      <div class="list-item"><strong>Sofia Braz</strong> Vice-Presidente Conselho Fiscal</div>
-      <div class="list-item"><strong>Rui Pedro Carvalho</strong> Secretário Conselho Fiscal</div>
-      <div class="list-item"><strong>Rui Carvalho</strong> Presidente MAG</div>
-      <div class="list-item"><strong>Ana Faria</strong> Vice-Presidente MAG</div>
-      <div class="list-item"><strong>Pedro Silva</strong> Secretário MAG</div>
-      <p><a class="button" href="#">Ver Lista Completa</a></p>
+  <div class="h-16"></div>
+  <section class="max-w-4xl mx-auto px-6 py-16 bg-gray-50 rounded-xl shadow">
+      <h2 class="text-3xl font-bold text-green-900 mb-6">A Nossa Candidatura</h2>
+      <p class="text-lg mb-8">Continuamos um projeto iniciado em 2022, com provas dadas, rumo a um Leça Futebol Clube mais forte, mais próximo, mais preparado para os desafios do futuro.</p>
+  </section>
+
+  <div class="h-12"></div>
+
+  <section class="max-w-4xl mx-auto px-6 py-16 bg-gray-50 rounded-xl shadow">
+    <h2 class="text-3xl font-bold text-green-900 mb-8 text-center">Lista Candidata</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Direção</h3>
+        <ul class="space-y-2">
+          <li class="bg-green-100 border-l-4 border-green-600 px-4 py-2 rounded-md shadow-md font-bold text-green-900"><strong>João Laranjeira</strong> <span class="ml-2 font-normal">Presidente</span></li>
+          <li class="bg-white border-l-4 border-green-700 px-4 py-2 rounded-md shadow-sm"><strong>Tiago Moura</strong><span class="ml-2">Vice-Presidente Formação</span></li>
+          <li class="bg-white border-l-4 border-green-700 px-4 py-2 rounded-md shadow-sm"><strong>Eurico Guerreiro</strong><span class="ml-2">Vice-Presidente Modalidades</span></li>
+          <li class="bg-white border-l-4 border-green-700 px-4 py-2 rounded-md shadow-sm"><strong>Hélder Valente</strong><span class="ml-2">Vice-Presidente Sócios e Área Social</span></li>
+          <li class="bg-white border-l-4 border-green-700 px-4 py-2 rounded-md shadow-sm"><strong>Tiago Silva</strong><span class="ml-2">Vice-Presidente Financeiro</span></li>
+          <li class="bg-white border-l-4 border-green-700 px-4 py-2 rounded-md shadow-sm"><strong>Luis Neto</strong><span class="ml-2">Vice-Presidente Património</span></li>
+          <li class="bg-white border-l-4 border-green-700 px-4 py-2 rounded-md shadow-sm"><strong>José Sousa</strong><span class="ml-2">Vice-Presidente Marketing</span></li>
+          <li class="bg-white border-l-4 border-green-700 px-4 py-2 rounded-md shadow-sm"><strong>Nuno Margarido</strong><span class="ml-2">Vice-Presidente Jurídico</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Conselho Fiscal</h3>
+        <ul class="space-y-2">
+          <li class="bg-green-100 border-l-4 border-green-600 px-4 py-2 rounded-md shadow-md font-bold text-green-900"><strong>Hugo Salvador</strong><span class="ml-2 font-normal">Presidente</span></li>
+          <li class="bg-white border-l-4 border-green-700 px-4 py-2 rounded-md shadow-sm"><strong>Sofia Braz</strong><span class="ml-2">Vice-Presidente</span></li>
+          <li class="bg-white border-l-4 border-green-700 px-4 py-2 rounded-md shadow-sm"><strong>Rui Pedro Carvalho</strong><span class="ml-2">Secretário</span></li>
+        </ul>
+        <h3 class="text-xl font-semibold mt-6 mb-2">Mesa da Assembleia Geral</h3>
+        <ul class="space-y-2">
+          <li class="bg-green-100 border-l-4 border-green-600 px-4 py-2 rounded-md shadow-md font-bold text-green-900"><strong>Rui Carvalho</strong><span class="ml-2 font-normal">Presidente</span></li>
+          <li class="bg-white border-l-4 border-green-700 px-4 py-2 rounded-md shadow-sm"><strong>Ana Faria</strong><span class="ml-2">Vice-Presidente</span></li>
+          <li class="bg-white border-l-4 border-green-700 px-4 py-2 rounded-md shadow-sm"><strong>Pedro Silva</strong><span class="ml-2">Secretário</span></li>
+        </ul>
+      </div>
     </div>
+    <div class="text-center mt-8">
+      <a href="lista.html" class="inline-block bg-green-700 text-white px-6 py-3 rounded-full shadow hover:bg-green-800 transition">Ver Lista Completa</a>
+    </div>
+  </section>
 
-    <div class="section">
-      <h2>Programa 2025–2027</h2>
-      <ul>
+  <div class="h-16"></div>
+
+  <section class="max-w-4xl mx-auto px-6 py-16 bg-gray-50 rounded-xl shadow">
+    <h2 class="text-3xl font-bold text-green-900 mb-8 text-center">Programa 2025–2027</h2>
+    <p class="mb-8 text-lg text-center">Conhece os pilares da nossa candidatura, assentes na continuidade, inovação e compromisso com o Leça e a sua comunidade:</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <ul class="space-y-2">
         <li><strong>Sócios:</strong> Valorização, participação e proximidade com todos os associados.</li>
         <li><strong>Ação Social:</strong> Um clube solidário e atento à sua comunidade.</li>
         <li><strong>Futebol de Formação:</strong> Consolidação de processos e ambição desportiva.</li>
         <li><strong>Modalidades:</strong> Requalificação do pavilhão e apoio estruturado às modalidades.</li>
         <li><strong>Infraestruturas:</strong> Execução da segunda e terceira fases da obra do pavilhão.</li>
+      </ul>
+      <ul class="space-y-2">
         <li><strong>Marketing e Comunicação:</strong> Nova estrutura para reforçar a marca e os laços com os parceiros.</li>
         <li><strong>Executivo:</strong> Direção com objetivos claros, descentralizada e escrutinada.</li>
         <li><strong>Jurídico:</strong> Reforço da regulamentação interna e candidatura a apoios externos.</li>
         <li><strong>Relações Externas:</strong> Fortalecer a ligação às forças políticas e à comunidade.</li>
         <li><strong>Finanças:</strong> Rigor orçamental, consolidação e aplicação à formação.</li>
       </ul>
-      <p><a class="button" href="#">Ver Programa Completo</a></p>
     </div>
+    <div class="text-center mt-8">
+      <a href="programa.html" class="inline-block bg-green-700 text-white px-6 py-3 rounded-full shadow hover:bg-green-800 transition">Ver Programa Completo</a>
+    </div>
+  </section>
+
+  <div class="bg-green-900 text-white py-12 text-center">
+    <p class="text-2xl font-semibold">Participa no futuro do nosso clube.</p>
+    <p class="mt-3 text-lg">Entra em contacto: <a href="mailto:contacto@somosleca.pt" class="underline">contacto@somosleca.pt</a></p>
   </div>
 
-  <footer>
+  <footer class="bg-gray-100 text-center py-4 text-sm text-gray-600">
     &copy; 2025 Somos Leça – Todos os direitos reservados.
   </footer>
 </body>
