@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somos Leça – Lançamento em breve</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .countdown span { display: inline-block; min-width: 60px; font-size: 2rem; font-weight: bold; }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <header class="bg-green-900 text-white py-12 text-center">
+    <h1 class="text-4xl font-bold">Somos Leça</h1>
+    <p class="text-lg mt-2">Candidatura aos Órgãos Sociais do Leça Futebol Clube</p>
+    <p class="text-md italic">Um Leça Mais Forte. Um Leça Mais Nosso.</p>
+  </header>
+
+  <main class="text-center py-24 px-6">
+    <h2 class="text-3xl font-bold text-green-900 mb-4">Estamos quase prontos.</h2>
+    <p class="text-lg mb-10">A nossa página será lançada a <strong>9 de julho às 19h</strong>.</p>
+    <div id="countdown" class="countdown flex justify-center space-x-6 text-green-900"></div>
+  </main>
+
+  <div class="bg-green-900 text-white py-12 text-center">
+    <p class="text-2xl font-semibold">Participa no futuro do nosso clube.</p>
+    <p class="mt-3 text-lg">Entra em contacto: <a href="mailto:contacto@somosleca.pt" class="underline">contacto@somosleca.pt</a></p>
+  </div>
+
+  <footer class="bg-white text-center py-4 text-sm text-gray-600">
+    <p>&copy; 2025 Somos Leça – Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const countdown = document.getElementById('countdown');
+    const targetDate = new Date('2025-07-09T19:00:00');
+
+    function updateCountdown() {
+      const now = new Date();
+      const diff = targetDate - now;
+
+      if (diff <= 0) {
+        countdown.innerHTML = '<p class="text-xl">Já estamos no ar!</p>';
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+
+      countdown.innerHTML = `
+        <span>${String(days).padStart(2, '0')}d</span>
+        <span>${String(hours).padStart(2, '0')}h</span>
+        <span>${String(minutes).padStart(2, '0')}m</span>
+        <span>${String(seconds).padStart(2, '0')}s</span>
+      `;
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+</body>
+</html>
